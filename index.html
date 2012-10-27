@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>griddleCake</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<script type="text/javascript" src="griddlecake.js"></script>
+		<script type="text/javascript" src="griddlecake-debug.js"></script>
+		<style>
+			body { font-family: "Segoue UI", "Candara", "Arial", "Helvetica", sans-serif; }
+			#vendorPrefix:before {content:'Vendor Prefix: '; font-weight: bold; color: #000;}
+			#supportedValues:before {content:'Supported Styles: '; font-weight: bold; color: #000;}
+
+			#vendorPrefix {
+
+			}
+			#supportedValues > div {
+				font-family: monospace;
+			}
+			#supportedValues > div[data-supported='true'] span {
+				color: #090;
+				font-weight: bold;
+			}
+			#supportedValues > div[data-supported='false'] span {
+				color: #900;
+				font-weight: bold;
+			}
+
+			.gridRule {
+				display: grid;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">griddleCake.init();</script>
+	</body>
+</html>
